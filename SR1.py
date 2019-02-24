@@ -86,7 +86,7 @@ class SoftwareRender(object):
         """
         self.window.write(self.filename)
 
-
+# Instructions to generate the point
 x = SoftwareRender('outazo.bmp')
 x.glCreateWindow(900, 400)
 x.glViewPort(0, 0, 300, 300)
