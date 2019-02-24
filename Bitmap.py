@@ -2,6 +2,8 @@
 # Bitmap.py
 # Inspired in the class render made in Graphics Course C3044
 import struct
+import sys
+
 from math import ceil
 
 
@@ -88,6 +90,7 @@ class Bitmap(object):
             self.b = ceil(b * 255)
         else:
             print("Please insert numbers between 0 and 1")
+            sys.exit()
 
     def glVertex(self, x, y):
         """
@@ -108,6 +111,7 @@ class Bitmap(object):
                     self.point(localX + x, localY + y, color(self.vr, self.vb, self.vg))
         else:
             print('Initialize glViewPort')
+            sys.exit()
 
     def set_point_size(self, pointSize):
         """
@@ -131,6 +135,7 @@ class Bitmap(object):
             self.vb = ceil(b * 255)
         else:
             print("Please insert numbers between 0 and 1")
+            sys.exit()
 
     def write(self, filename):
         """
